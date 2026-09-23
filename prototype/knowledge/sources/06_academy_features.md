@@ -4,13 +4,13 @@ topic: features
 audience: academy,organization
 verified: true
 source_type: approved_internal
-last_updated: 2026-09-22
-provenance: audio_samples/sentences.md (brand sentences) + agent prompt
+last_updated: 2026-09-23
+provenance: Verified product description (knowledge upgrade 2026-09-23)
 ---
 # Academy and Organization Features
 
 ## Zhatura for academies and organizations
-Chess academies and organizations are among the audiences Zhatura serves. "Zhatura Chess Academy" is a Zhatura offering name used in Zhatura's own materials. Coaches within such setups manage batches in the Coach Dashboard.
+Chess academies and organizations are among the audiences Zhatura serves. Zhatura is designed to support chess academies and organized learning environments. "Zhatura Chess Academy" is a Zhatura offering name used in Zhatura's own materials. Coaches within such setups manage batches in the Coach Dashboard.
 
 ## Multi-student support
 Whether an academy can onboard many students, assign multiple coaches or split students into groups is not yet documented in verified Zhatura sources.
@@ -26,3 +26,6 @@ How many students an academy can manage, and any other academy-specific capabili
 
 ## Custom plans and bulk pricing
 Custom plans, organization pricing and bulk-user terms are not yet documented in verified sources. Refer pricing questions to the plans and pricing knowledge entry.
+
+## Planned academy capabilities
+Expanded academy management is described as a future plan, not a current capability. Zhatura's product roadmap includes expanded academy management. Do not describe it as currently available.

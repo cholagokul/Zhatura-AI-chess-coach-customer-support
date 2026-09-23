@@ -49,7 +49,7 @@ window.ZHATURA_SUPPORT_DATA = {
       "id": "game-analysis",
       "title": "Game Analysis",
       "icon": "activity",
-      "article_count": 1
+      "article_count": 2
     },
     {
       "id": "progress-tracking",
@@ -86,6 +86,18 @@ window.ZHATURA_SUPPORT_DATA = {
       "title": "Frequently Asked Questions",
       "icon": "message-circle",
       "article_count": 1
+    },
+    {
+      "id": "online-chess",
+      "title": "Online Chess",
+      "icon": "swords",
+      "article_count": 1
+    },
+    {
+      "id": "planned-features",
+      "title": "Planned & Future Features",
+      "icon": "map",
+      "article_count": 1
     }
   ],
   "articles": [
@@ -115,22 +127,27 @@ window.ZHATURA_SUPPORT_DATA = {
         },
         {
           "title": "What Zhatura is",
-          "content": "Zhatura is an AI-powered chess learning platform. Zhatura AI is the name of the learning platform.",
-          "is_content_required": false
-        },
-        {
-          "title": "What problem Zhatura solves",
-          "content": "Zhatura helps students and children learn chess with AI support. It also helps parents, coaches, academies and organizations follow and manage chess learning.",
+          "content": "Zhatura is an AI-powered chess learning platform that helps players improve through playing, reviewing games, and guided practice. It combines chess play with learning support so that players can understand their games, reflect on their decisions, and improve over time.",
           "is_content_required": false
         },
         {
           "title": "Who Zhatura is for",
-          "content": "Zhatura serves students and children learning chess, parents who want to follow their child's learning, chess coaches, chess academies and similar organizations, and prospective customers who want to know what Zhatura offers.",
+          "content": "Zhatura is designed for beginners, developing chess players, young learners, parents, chess coaches, and chess academies. Students use it to play and learn, parents use it to support and oversee learning, and coaches and academies use it to support player development.",
           "is_content_required": false
         },
         {
           "title": "How Zhatura is different from a normal chess app",
-          "content": "Zhatura is an AI-powered learning platform rather than only a chess-playing app. It uses the Zhatura AI Chess Coach alongside dashboards for students, parents and coaches.",
+          "content": "Zhatura combines competitive play with explanations that help players learn how to think about their chess decisions. Its purpose is to make chess improvement understandable, encouraging, structured, and safe. The platform positions learning as play plus review plus guided learning plus practice plus safety \u2014 the goal is not only playing more games, but understanding what happened in those games.",
+          "is_content_required": false
+        },
+        {
+          "title": "How Zhatura helps you improve",
+          "content": "Zhatura supports a simple improvement loop. Play: play chess against other players. Review: look back at completed games. Understand: see important moments and receive explanations. Practice: work on tactical exercises and relevant training. Improve: use lessons from previous games in future play.",
+          "is_content_required": false
+        },
+        {
+          "title": "Free and premium access",
+          "content": "Zhatura documentation describes both free and paid access. Free accounts may receive limited coaching reviews, and paid subscriptions may provide expanded access. Exact prices, plan names, and review limits are not verified in the knowledge base. Current pricing and detailed subscription information should be confirmed through Zhatura Customer Support.",
           "is_content_required": false
         },
         {
@@ -177,8 +194,18 @@ window.ZHATURA_SUPPORT_DATA = {
           "is_content_required": false
         },
         {
+          "title": "My Zhatura Coach",
+          "content": "The AI coaching experience is called My Zhatura Coach. My Zhatura Coach helps players reflect on completed games. It provides supportive explanations and reflective questions that help players understand their decisions \u2014 why a move was played, what alternatives might have existed, what the player noticed, what the player may have missed, and how to improve similar decisions in future games. It is a learning aid and does not replace a human chess coach.",
+          "is_content_required": false
+        },
+        {
           "title": "What the AI Chess Coach can explain generally",
           "content": "The AI Chess Coach supports a child's chess learning journey. It can explain chess concepts, point out mistakes and suggest what to focus on next during practice and review.",
+          "is_content_required": false
+        },
+        {
+          "title": "Post-game learning focus",
+          "content": "Zhatura's AI coaching is designed for learning and post-game reflection, not for giving players moves during an active competitive game. My Zhatura Coach does not provide a move, the best move, or any move suggestions while you are playing a competitive game. Its coaching focuses on a small number of meaningful moments after a game instead of overwhelming learners with every possible chess mistake, so the learner can focus on the most useful moments from a game.",
           "is_content_required": false
         },
         {
@@ -188,7 +215,7 @@ window.ZHATURA_SUPPORT_DATA = {
         },
         {
           "title": "Mistake explanation and recommendations",
-          "content": "The AI Chess Coach can explain why a move was a mistake and recommend a better idea. Specific recommendation rules, mistake categories and skill-mapping are not yet documented in verified sources.",
+          "content": "The AI Chess Coach can explain why a move was a mistake and recommend a better idea during learning and review. Specific recommendation rules, mistake categories and skill-mapping are not yet documented in verified sources.",
           "is_content_required": true
         },
         {
@@ -231,13 +258,18 @@ window.ZHATURA_SUPPORT_DATA = {
           "is_content_required": false
         },
         {
-          "title": "Learning activities",
-          "content": "What exactly students see and do after logging in \u2014 for example the precise list of learning activities, puzzles, game analysis tools or lesson schedules \u2014 is not yet documented in verified Zhatura sources. Do not invent a feature list; say the detailed student feature list is not yet available in verified documentation.",
+          "title": "What students can do in Zhatura",
+          "content": "Zhatura documentation describes the following learning activities for students: play chess online, review completed games, understand important mistakes through explanations, practice chess skills with tactical exercises, and learn through clear explanations rather than only engine numbers. These capabilities are designed to make improvement understandable and encouraging.",
+          "is_content_required": false
+        },
+        {
+          "title": "Learning activities detail",
+          "content": "The precise catalog of learning activities, schedules and menus inside the Student Dashboard is not yet documented in verified Zhatura sources. Do not invent a feature list; say the detailed student feature list is not yet available in verified documentation.",
           "is_content_required": true
         },
         {
           "title": "Practice and game history",
-          "content": "Whether the Student Dashboard shows past games, practice sets, achievements, ratings or progress history is not yet documented in verified sources. Keep answers general unless verified details are added later.",
+          "content": "Students can revisit previous matches and their associated learning feedback through game history, and can practice with puzzles and training exercises. Whether the Student Dashboard also shows achievements, badges or progress history in a specific format is not yet documented in verified sources.",
           "is_content_required": true
         },
         {
@@ -280,8 +312,18 @@ window.ZHATURA_SUPPORT_DATA = {
           "is_content_required": false
         },
         {
+          "title": "How Zhatura helps parents",
+          "content": "Zhatura can help parents support a child's chess learning, review activity where supported, manage consent and protected features, and provide a safer learning environment for younger players.",
+          "is_content_required": false
+        },
+        {
+          "title": "Guardian controls",
+          "content": "Zhatura includes guardian-oriented controls for younger players. Documented capabilities include managing consent, reviewing activity, and controlling access to protected features. These controls are designed to help parents and guardians stay involved in their child's learning.",
+          "is_content_required": false
+        },
+        {
           "title": "Lesson and activity visibility",
-          "content": "Whether parents can see lesson history, upcoming sessions, time spent, specific scores or activity details is not yet documented in verified Zhatura sources. Do not invent reports or controls.",
+          "content": "Whether parents can see lesson history, upcoming sessions, time spent, specific scores or activity details is not yet documented in verified Zhatura sources. Do not invent reports or controls beyond the documented guardian controls.",
           "is_content_required": true
         },
         {
@@ -322,8 +364,13 @@ window.ZHATURA_SUPPORT_DATA = {
           "is_content_required": false
         },
         {
+          "title": "How Zhatura supports coaches",
+          "content": "Zhatura is designed to support chess coaching workflows and player development. Documented capabilities include managing batches through the Coach Dashboard, alongside platform features such as online play, game review and guided learning that coaches can use with their students.",
+          "is_content_required": false
+        },
+        {
           "title": "Student monitoring",
-          "content": "How coaches view per-student progress, attendance, performance or skill gaps is not yet documented in verified Zhatura sources.",
+          "content": "How coaches view per-student progress, attendance, performance or skill gaps is not yet documented in verified Zhatura sources. Do not invent detailed coach-dashboard functions.",
           "is_content_required": true
         },
         {
@@ -372,7 +419,7 @@ window.ZHATURA_SUPPORT_DATA = {
         },
         {
           "title": "Zhatura for academies and organizations",
-          "content": "Chess academies and organizations are among the audiences Zhatura serves. \"Zhatura Chess Academy\" is a Zhatura offering name used in Zhatura's own materials. Coaches within such setups manage batches in the Coach Dashboard.",
+          "content": "Chess academies and organizations are among the audiences Zhatura serves. Zhatura is designed to support chess academies and organized learning environments. \"Zhatura Chess Academy\" is a Zhatura offering name used in Zhatura's own materials. Coaches within such setups manage batches in the Coach Dashboard.",
           "is_content_required": false
         },
         {
@@ -399,6 +446,11 @@ window.ZHATURA_SUPPORT_DATA = {
           "title": "Custom plans and bulk pricing",
           "content": "Custom plans, organization pricing and bulk-user terms are not yet documented in verified sources. Refer pricing questions to the plans and pricing knowledge entry.",
           "is_content_required": true
+        },
+        {
+          "title": "Planned academy capabilities",
+          "content": "Expanded academy management is described as a future plan, not a current capability. Zhatura's product roadmap includes expanded academy management. Do not describe it as currently available.",
+          "is_content_required": false
         }
       ],
       "summary": ""
@@ -491,12 +543,17 @@ window.ZHATURA_SUPPORT_DATA = {
         },
         {
           "title": "What game analysis is",
-          "content": "Zhatura can analyse chess games to help students learn from their moves. The AI Chess Coach can explain mistakes and suggest better ideas.",
+          "content": "After a game, Zhatura can analyse the completed game so players better understand their play. Zhatura documentation describes post-game analysis that highlights important moves, missed opportunities, turning points, and decisions that affected the game. The AI Chess Coach can explain mistakes and suggest better ideas.",
+          "is_content_required": false
+        },
+        {
+          "title": "What game analysis is for",
+          "content": "The purpose of game analysis is learning, not just showing mistakes. Explanations are written to be learner-friendly, helping players understand what happened and why, so they can carry those lessons into future games.",
           "is_content_required": false
         },
         {
           "title": "Which games can be analysed",
-          "content": "Which game sources can be imported or reviewed \u2014 for example games played on Zhatura, uploaded PGN files, or live games \u2014 is not yet documented in verified sources.",
+          "content": "Which game sources can be imported or reviewed \u2014 for example games played on Zhatura, uploaded PGN files, or live games \u2014 is not yet documented in verified sources. Games played on Zhatura can be reviewed after they are completed.",
           "is_content_required": true
         },
         {
@@ -513,6 +570,11 @@ window.ZHATURA_SUPPORT_DATA = {
           "title": "Progress connection",
           "content": "Whether analysed games feed into progress tracking, ratings, or coaching recommendations is not yet documented in verified sources.",
           "is_content_required": true
+        },
+        {
+          "title": "Analysis during active games",
+          "content": "Zhatura's AI coaching is designed for learning and post-game reflection, not for giving players moves during an active competitive game. Game analysis and coaching explanations are available after a game is completed.",
+          "is_content_required": false
         }
       ],
       "summary": ""
@@ -549,7 +611,7 @@ window.ZHATURA_SUPPORT_DATA = {
         },
         {
           "title": "What progress tracking means",
-          "content": "Zhatura tracks chess-learning progress so students, parents and coaches can see how learning is going. Parents can view their child's chess learning progress in the Parent Dashboard.",
+          "content": "Zhatura tracks chess-learning progress so students, parents and coaches can see how learning is going. Parents can view their child's chess learning progress in the Parent Dashboard. Rated games also carry player ratings that help players track competitive progress over time, and game history helps players observe improvement over time.",
           "is_content_required": false
         },
         {
@@ -601,6 +663,11 @@ window.ZHATURA_SUPPORT_DATA = {
           "is_content_required": false
         },
         {
+          "title": "Training and practice direction",
+          "content": "Zhatura documentation describes training capabilities that include tactical exercises, chess practice, and training connected to mistakes from previous games. The goal of training is to help players practise the skills they need most, based on what they have already played.",
+          "is_content_required": false
+        },
+        {
           "title": "Puzzle availability",
           "content": "Zhatura includes chess puzzles for practice. The exact puzzle library size, themes, difficulty model or recommendation rules are not yet documented in verified sources.",
           "is_content_required": true
@@ -617,7 +684,7 @@ window.ZHATURA_SUPPORT_DATA = {
         },
         {
           "title": "Recommendations and training mode",
-          "content": "Whether Zhatura recommends puzzles based on mistakes, offers guided training mode, or connects puzzles to lessons is not yet documented in verified sources.",
+          "content": "Documented product capabilities include training based on mistakes from previous games. Whether Zhatura automatically recommends puzzles, offers a guided training mode schedule, or connects puzzles to lessons on a fixed plan is not yet documented in verified sources. Do not invent numbers of puzzles, difficulty levels, puzzle ratings, or daily limits.",
           "is_content_required": true
         }
       ],
@@ -648,13 +715,18 @@ window.ZHATURA_SUPPORT_DATA = {
           "is_content_required": false
         },
         {
-          "title": "Verified status: no plan data yet",
-          "content": "There is currently NO verified Zhatura plan, package, subscription, price, discount, refund, renewal or free-trial information in the knowledge base. The correct answer to any plan, package or pricing question is that verified plan details are not available yet \u2014 never quote or invent a price, plan name, discount, renewal term or trial term. Offer to help with other Zhatura questions or to note the pricing question for the support team.",
+          "title": "Free and paid access concept",
+          "content": "Zhatura documentation describes both free and paid access at a concept level: free accounts may receive limited coaching reviews, and paid subscriptions may provide expanded access. This free/premium concept is documented, but exact figures are not.",
+          "is_content_required": false
+        },
+        {
+          "title": "Verified status: no exact plan data yet",
+          "content": "There is currently NO verified Zhatura plan, package, subscription, price, discount, refund, renewal or free-trial information in the knowledge base. The correct answer to any plan, package or pricing question is that verified plan details are not available yet \u2014 never quote or invent a price, plan name, discount, renewal term or trial term. Current pricing and detailed subscription information should be confirmed through Zhatura Customer Support. Offer to help with other Zhatura questions or to note the pricing question for the support team.",
           "is_content_required": true
         },
         {
           "title": "What to avoid",
-          "content": "Never say a specific amount in rupees, dollars or any currency. Never name a plan such as \"Basic\", \"Pro\", \"Family\" or \"Academy\" unless it appears in a verified source. Never promise a trial length, discount percentage or refund window.",
+          "content": "Never say a specific amount in rupees, dollars or any currency. Never name a plan such as \"Basic\", \"Pro\", \"Family\" or \"Academy\" unless it appears in a verified source. Never promise a trial length, discount percentage or refund window. Do not invent coaching review limits or premium feature counts.",
           "is_content_required": false
         },
         {
@@ -847,12 +919,107 @@ window.ZHATURA_SUPPORT_DATA = {
         },
         {
           "title": "What is Zhatura?",
-          "content": "Zhatura is an AI-powered chess learning platform for students, children, parents, chess coaches, chess academies and organizations.",
+          "content": "Zhatura is an AI-powered chess learning platform for students, children, parents, chess coaches, chess academies and organizations. It helps players improve by combining online chess, game review, guided coaching and practice.",
+          "is_content_required": false
+        },
+        {
+          "title": "Who is Zhatura designed for?",
+          "content": "Zhatura is designed for beginners, developing chess players, young learners, parents, chess coaches and chess academies. Students use it to play and learn, parents to support and oversee learning, and coaches and academies to support player development.",
           "is_content_required": false
         },
         {
           "title": "What is the Zhatura AI Chess Coach?",
-          "content": "It is Zhatura's AI coach for learning chess; children use it as part of the Zhatura platform.",
+          "content": "It is Zhatura's AI coach for learning chess; children use it as part of the Zhatura platform. The AI coaching experience is called My Zhatura Coach, which gives supportive explanations and reflective questions after completed games. It does not replace a human chess coach.",
+          "is_content_required": false
+        },
+        {
+          "title": "What is My Zhatura Coach?",
+          "content": "My Zhatura Coach helps players reflect on completed games. It provides supportive explanations, reflective questions, a focus on the important moments of a game, and learning guidance about why a move was played, what alternatives existed, and how to improve similar decisions in future games. It does not provide moves during an active competitive game.",
+          "is_content_required": false
+        },
+        {
+          "title": "Can Zhatura help beginners?",
+          "content": "Yes. Zhatura is designed to help beginners and developing players improve through playing, reviewing games, guided coaching and practice, with explanations that are understandable and encouraging rather than only engine numbers.",
+          "is_content_required": false
+        },
+        {
+          "title": "Can children use Zhatura?",
+          "content": "Yes. Zhatura is designed for young learners and includes safety-focused features such as private profiles, restricted communication, reporting and blocking, together with guardian controls for parents and guardians.",
+          "is_content_required": false
+        },
+        {
+          "title": "Can parents review their child's activity?",
+          "content": "Zhatura documentation describes guardian controls that include managing consent, reviewing activity and controlling access to protected features. Parents can also view their child's chess learning progress in the Parent Dashboard.",
+          "is_content_required": false
+        },
+        {
+          "title": "Can I play chess against other players?",
+          "content": "Yes. Zhatura documentation describes online one-on-one chess games. Players can play against other players through matchmaking or direct challenges, including competitive player-versus-player games.",
+          "is_content_required": false
+        },
+        {
+          "title": "Does Zhatura have matchmaking?",
+          "content": "Yes. Zhatura includes skill-based matchmaking intended to help players find opponents with comparable playing strength, so games are more balanced and useful. The exact matchmaking method is not documented.",
+          "is_content_required": false
+        },
+        {
+          "title": "Does Zhatura use player ratings?",
+          "content": "Yes. Zhatura includes player ratings for rated games, intended to help players track competitive progress over time. The rating formula, starting rating and rating brackets are not documented.",
+          "is_content_required": false
+        },
+        {
+          "title": "Can Zhatura analyze my games?",
+          "content": "Yes. After a game, Zhatura can help players review important decisions, missed opportunities and turning points. The purpose is learning \u2014 understanding what happened and why \u2014 rather than only showing mistakes.",
+          "is_content_required": false
+        },
+        {
+          "title": "Does Zhatura give moves during live games?",
+          "content": "No. Zhatura's AI coaching is designed for learning and post-game reflection, not for giving players moves during an active competitive game. My Zhatura Coach works with completed games.",
+          "is_content_required": false
+        },
+        {
+          "title": "Does Zhatura include puzzles or training?",
+          "content": "Yes. Documented capabilities include tactical exercises, chess practice, puzzles for training, and training connected to mistakes from previous games. Exact puzzle counts, difficulty levels and daily limits are not documented.",
+          "is_content_required": false
+        },
+        {
+          "title": "Can I review old games?",
+          "content": "Yes. Zhatura allows players to revisit previous matches and their associated learning feedback. Game history can help players review earlier games, revisit coaching feedback, recognize recurring mistakes and observe improvement over time.",
+          "is_content_required": false
+        },
+        {
+          "title": "Does Zhatura have free access?",
+          "content": "Zhatura documentation describes free access: free accounts may receive limited coaching reviews. Exact review limits are not verified. Current pricing and detailed subscription information should be confirmed through Zhatura Customer Support.",
+          "is_content_required": false
+        },
+        {
+          "title": "Does Zhatura offer paid subscriptions?",
+          "content": "Zhatura documentation describes paid subscriptions that may provide expanded access. Plan names, exact prices and exact limits are not verified. Current pricing and detailed subscription information should be confirmed through Zhatura Customer Support.",
+          "is_content_required": false
+        },
+        {
+          "title": "Can I use Zhatura on mobile?",
+          "content": "Zhatura is designed for chess play and learning on Android and iOS, as a mobile-oriented chess learning experience. Specific app-store release status is not verified; do not assume a particular store listing.",
+          "is_content_required": false
+        },
+        {
+          "title": "Is Zhatura suitable for coaches?",
+          "content": "Yes. Zhatura is designed to support chess coaching workflows and player development. Coaches manage batches in the Coach Dashboard, and students learn through online play, game review and guided practice. Detailed coach-dashboard functions beyond batch management are not documented.",
+          "is_content_required": false
+        },
+        {
+          "title": "Is Zhatura suitable for chess academies?",
+          "content": "Yes. Zhatura is designed to support chess academies and organized learning environments, with coaches managing batches in the Coach Dashboard. Academy seat limits, pricing and detailed management features are not documented.",
+          "is_content_required": false
+        },
+        {
+          "title": "Does Zhatura support safety controls for young players?",
+          "content": "Yes. Documented safety-oriented features include private profiles, restricted communication, reporting and blocking, alongside guardian controls for consent, activity review and access to protected features.",
+          "is_content_required": false
+        },
+        {
+          "title": "What future features are planned?",
+          "content": "Future plans described for Zhatura include tournaments, expanded academy management, smart-board connections and video coaching classrooms. Status: FUTURE \u2014 these are roadmap items, not current capabilities, and no launch dates are verified.",
           "is_content_required": false
         },
         {
@@ -878,6 +1045,11 @@ window.ZHATURA_SUPPORT_DATA = {
         {
           "title": "Can the support agent access my account?",
           "content": "No. The assistant cannot log into, view, check or modify any individual customer account, child profile, subscription, payment or lesson/session status in the current phase.",
+          "is_content_required": false
+        },
+        {
+          "title": "How much does Zhatura cost?",
+          "content": "Exact pricing is not in the verified knowledge base. Never invent a price. Current pricing and detailed subscription information should be confirmed through Zhatura Customer Support.",
           "is_content_required": false
         }
       ],
@@ -997,16 +1169,20 @@ window.ZHATURA_SUPPORT_DATA = {
     {
       "id": "privacy_security",
       "file_name": "18_privacy_security.md",
-      "title": "Privacy and Security",
+      "title": "Privacy and Safety",
       "topic": "support",
       "category_id": "technical-support",
       "category_title": "Technical & General Support",
       "category_icon": "help-circle",
       "audiences": [
-        "general"
+        "general",
+        "parent",
+        "child"
       ],
       "audience_labels": [
-        "All Audiences"
+        "All Audiences",
+        "Parents & Guardians",
+        "Students & Children"
       ],
       "verified": true,
       "status": "available",
@@ -1014,8 +1190,13 @@ window.ZHATURA_SUPPORT_DATA = {
       "provenance": "Zhatura Verified Knowledge Base",
       "sections": [
         {
-          "title": "Privacy and Security",
+          "title": "Privacy and Safety",
           "content": "",
+          "is_content_required": false
+        },
+        {
+          "title": "Safety features for young players",
+          "content": "Zhatura includes safety and privacy measures for young players. Documented safety-oriented features include private profiles, restricted communication, reporting, and blocking. These features are designed to help provide a more suitable learning environment for younger players.",
           "is_content_required": false
         },
         {
@@ -1029,8 +1210,13 @@ window.ZHATURA_SUPPORT_DATA = {
           "is_content_required": false
         },
         {
+          "title": "Guardian consent and protected features",
+          "content": "Parents and guardians can manage consent and control access to protected features as part of the documented guardian controls. Reporting and blocking are available as safety tools for players.",
+          "is_content_required": false
+        },
+        {
           "title": "Data handling claims",
-          "content": "Specific data-retention periods, encryption standards, compliance certifications or third-party subprocessors are not yet documented in verified Zhatura sources. Do not make privacy or security claims that are not verified.",
+          "content": "Specific data-retention periods, encryption standards, compliance certifications or third-party subprocessors are not yet documented in verified Zhatura sources. Do not claim certification, legal compliance or security standards that are not verified.",
           "is_content_required": true
         },
         {
@@ -1044,7 +1230,7 @@ window.ZHATURA_SUPPORT_DATA = {
     {
       "id": "supported_platforms",
       "file_name": "19_supported_platforms.md",
-      "title": "Supported Platforms",
+      "title": "Supported Platforms and Mobile",
       "topic": "support",
       "category_id": "technical-support",
       "category_title": "Technical & General Support",
@@ -1061,23 +1247,33 @@ window.ZHATURA_SUPPORT_DATA = {
       "provenance": "Zhatura Verified Knowledge Base",
       "sections": [
         {
-          "title": "Supported Platforms",
+          "title": "Supported Platforms and Mobile",
           "content": "",
           "is_content_required": false
         },
         {
-          "title": "Verified platform information",
-          "content": "Which devices, operating systems, browsers or app stores Zhatura supports is not yet documented in verified sources.",
+          "title": "Mobile experience",
+          "content": "Zhatura is designed for chess play and learning on Android and iOS. It is described as a mobile-oriented chess learning experience for players who want to play and learn on a phone or tablet.",
+          "is_content_required": false
+        },
+        {
+          "title": "App store availability",
+          "content": "Specific app-store release status for Android or iOS is not verified in the knowledge base. Do not claim that an app is currently published on Google Play or the Apple App Store unless that is separately confirmed.",
+          "is_content_required": false
+        },
+        {
+          "title": "Verified device and OS details",
+          "content": "Exact minimum operating-system versions, supported browsers, device specifications and app versions are not yet documented in verified sources. Do not invent platform requirements.",
           "is_content_required": true
         },
         {
           "title": "General guidance",
-          "content": "Zhatura is an AI-powered chess learning platform. Most modern web browsers and mobile devices are likely supported, but specific system requirements, app versions and compatibility details are not verified.",
+          "content": "Zhatura is an AI-powered chess learning platform. Most modern web browsers and mobile devices are likely to work, but specific compatibility details are not verified.",
           "is_content_required": false
         },
         {
           "title": "Do not invent",
-          "content": "Do not claim support for specific operating systems, minimum device specs, Android or iOS versions, or browser names unless they appear in a verified source.",
+          "content": "Do not claim app-store availability, specific operating-system versions, minimum device specs or browser names unless they appear in a verified source.",
           "is_content_required": false
         }
       ],
@@ -1129,7 +1325,7 @@ window.ZHATURA_SUPPORT_DATA = {
         },
         {
           "title": "Pricing or plan questions",
-          "content": "Pricing and plan details are not available in verified sources. Use the pricing guard: say verified details are not available and do not invent numbers or plan names.",
+          "content": "Zhatura documentation describes free and paid access at a concept level, but exact pricing, plan names and limits are not available in verified sources. Use the pricing guard: never invent numbers or plan names, and direct current pricing questions to Zhatura Customer Support.",
           "is_content_required": false
         },
         {
@@ -1139,13 +1335,232 @@ window.ZHATURA_SUPPORT_DATA = {
         }
       ],
       "summary": ""
+    },
+    {
+      "id": "online_chess",
+      "file_name": "21_online_chess.md",
+      "title": "Online Chess",
+      "topic": "online_chess",
+      "category_id": "online-chess",
+      "category_title": "Online Chess",
+      "category_icon": "swords",
+      "audiences": [
+        "general",
+        "student",
+        "child",
+        "coach"
+      ],
+      "audience_labels": [
+        "All Audiences",
+        "Students & Children",
+        "Students & Children",
+        "Chess Coaches"
+      ],
+      "verified": true,
+      "status": "available",
+      "has_content_gaps": false,
+      "provenance": "Zhatura Verified Knowledge Base",
+      "sections": [
+        {
+          "title": "Online Chess",
+          "content": "",
+          "is_content_required": false
+        },
+        {
+          "title": "What online chess is",
+          "content": "Zhatura documentation describes online one-on-one chess games. Players can play chess online against other players either through matchmaking or direct challenges. Documented functionality includes matchmaking, direct challenges, competitive games, and player-versus-player chess.",
+          "is_content_required": false
+        },
+        {
+          "title": "Skill-based matchmaking",
+          "content": "Zhatura includes skill-based matchmaking. Matchmaking is intended to help players find opponents with comparable playing strength, creating more balanced and useful games. The exact matchmaking method and rating ranges are not documented; do not invent rating ranges or algorithms.",
+          "is_content_required": false
+        },
+        {
+          "title": "Direct challenges",
+          "content": "Players can challenge another player to a game directly, in addition to being matched with opponents through matchmaking.",
+          "is_content_required": false
+        },
+        {
+          "title": "Player ratings",
+          "content": "Zhatura includes player ratings for rated games. Ratings are intended to help players track competitive progress over time. The rating formula, rating system name, starting rating and rating brackets are not documented; do not invent them.",
+          "is_content_required": false
+        },
+        {
+          "title": "Online play and learning together",
+          "content": "Online games connect to the rest of the Zhatura learning experience: completed games can be reviewed through game analysis, revisited in game history, and used as the starting point for coaching and training. AI coaching does not give moves during these active games.",
+          "is_content_required": false
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "game_history",
+      "file_name": "22_game_history.md",
+      "title": "Game History",
+      "topic": "game_history",
+      "category_id": "game-analysis",
+      "category_title": "Game Analysis",
+      "category_icon": "activity",
+      "audiences": [
+        "general",
+        "student",
+        "child",
+        "parent",
+        "coach"
+      ],
+      "audience_labels": [
+        "All Audiences",
+        "Students & Children",
+        "Students & Children",
+        "Parents & Guardians",
+        "Chess Coaches"
+      ],
+      "verified": true,
+      "status": "available",
+      "has_content_gaps": true,
+      "provenance": "Zhatura Verified Knowledge Base",
+      "sections": [
+        {
+          "title": "Game History",
+          "content": "",
+          "is_content_required": false
+        },
+        {
+          "title": "What game history is",
+          "content": "Zhatura allows players to revisit previous matches and the learning feedback associated with them. Game history keeps earlier games available so players can return to them after they finish.",
+          "is_content_required": false
+        },
+        {
+          "title": "Why game history helps",
+          "content": "Game history can help players review earlier games, revisit coaching feedback, recognize recurring mistakes, and observe improvement over time. Looking back at past matches is part of how Zhatura turns play into learning.",
+          "is_content_required": false
+        },
+        {
+          "title": "What is stored with a game",
+          "content": "Each game in history can be revisited together with its associated learning feedback from analysis and coaching. The exact retention period, storage limit or export format is not documented; do not invent them.",
+          "is_content_required": false
+        },
+        {
+          "title": "How to find older games",
+          "content": "The precise steps to open game history inside the app are not yet documented in verified sources. Describe game history in general terms and direct detailed navigation questions to Zhatura Customer Support if needed.",
+          "is_content_required": true
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "id": "future_roadmap",
+      "file_name": "23_future_roadmap.md",
+      "title": "Planned and Future Capabilities",
+      "topic": "roadmap",
+      "category_id": "planned-features",
+      "category_title": "Planned & Future Features",
+      "category_icon": "map",
+      "audiences": [
+        "general",
+        "coach",
+        "academy"
+      ],
+      "audience_labels": [
+        "All Audiences",
+        "Chess Coaches",
+        "Chess Academies"
+      ],
+      "verified": true,
+      "status": "available",
+      "has_content_gaps": true,
+      "provenance": "Zhatura Verified Knowledge Base",
+      "sections": [
+        {
+          "title": "Planned and Future Capabilities",
+          "content": "",
+          "is_content_required": false
+        },
+        {
+          "title": "Status of this document",
+          "content": "Status: FUTURE. Everything described in this document is a planned future capability, not a current one. Future plans described for Zhatura include the items below. Do not say Zhatura currently provides any of them, and do not invent launch dates \u2014 no launch dates are verified.",
+          "is_content_required": false
+        },
+        {
+          "title": "Tournaments",
+          "content": "Status: FUTURE. Zhatura's product roadmap includes tournaments. Tournament experiences are planned and are not described as a current capability. When callers ask when they can join a tournament, explain that tournaments are described as future plans and current release details are not verified.",
+          "is_content_required": false
+        },
+        {
+          "title": "Expanded academy management",
+          "content": "Status: FUTURE. Zhatura's product roadmap includes expanded academy management for chess academies and organizations. Current academy scale limits and management features are not documented; never invent seat limits, dashboards or pricing.",
+          "is_content_required": false
+        },
+        {
+          "title": "Smart-board connections",
+          "content": "Status: FUTURE. Zhatura's product roadmap includes smart-board connections. No verified detail exists about supported boards, setup or availability.",
+          "is_content_required": true
+        },
+        {
+          "title": "Video coaching classrooms",
+          "content": "Status: FUTURE. Zhatura's product roadmap includes video coaching classrooms. No verified detail exists about classroom features, availability or schedules.",
+          "is_content_required": true
+        },
+        {
+          "title": "What is documented today",
+          "content": "Current documented capabilities \u2014 online chess, matchmaking, ratings, game analysis, My Zhatura Coach, training and puzzles, game history, guardian controls and safety features \u2014 are described in their own knowledge entries. Keep future plans clearly separated from current documented capabilities.",
+          "is_content_required": false
+        }
+      ],
+      "summary": ""
     }
   ],
   "faqs": [
     {
       "question": "What is the Zhatura AI Chess Coach?",
-      "answer": "The Zhatura AI Chess Coach is Zhatura's AI coach for learning chess. It explains chess concepts, points out mistakes, and recommends better ideas during practice and game review.",
+      "answer": "The Zhatura AI Chess Coach is Zhatura's AI coach for learning chess. It explains chess concepts, points out mistakes, and recommends better ideas during practice and game review. The coaching experience is called My Zhatura Coach.",
       "category": "AI Coach"
+    },
+    {
+      "question": "What is My Zhatura Coach?",
+      "answer": "My Zhatura Coach helps players reflect on completed games with supportive explanations and reflective questions. It does not provide moves during an active competitive game.",
+      "category": "AI Coach"
+    },
+    {
+      "question": "Can I play chess against other players?",
+      "answer": "Yes. Zhatura documentation describes online one-on-one chess games through matchmaking or direct challenges, including competitive player-versus-player games.",
+      "category": "Online Chess"
+    },
+    {
+      "question": "Does Zhatura have matchmaking?",
+      "answer": "Yes. Zhatura includes skill-based matchmaking intended to help players find opponents with comparable playing strength, so games are more balanced and useful.",
+      "category": "Online Chess"
+    },
+    {
+      "question": "Does Zhatura use player ratings?",
+      "answer": "Yes. Zhatura includes player ratings for rated games to help players track competitive progress over time. The rating formula and brackets are not documented.",
+      "category": "Online Chess"
+    },
+    {
+      "question": "Does Zhatura give moves during live games?",
+      "answer": "No. Zhatura's AI coaching is designed for learning and post-game reflection, not for giving players moves during an active competitive game.",
+      "category": "AI Coach"
+    },
+    {
+      "question": "Can parents review their child's activity?",
+      "answer": "Zhatura documentation describes guardian controls that include managing consent, reviewing activity, and controlling access to protected features.",
+      "category": "Parents"
+    },
+    {
+      "question": "Does Zhatura support safety controls for young players?",
+      "answer": "Yes. Documented safety-oriented features include private profiles, restricted communication, reporting, and blocking, alongside guardian controls.",
+      "category": "Privacy & Security"
+    },
+    {
+      "question": "Can I use Zhatura on mobile?",
+      "answer": "Zhatura is designed for chess play and learning on Android and iOS. Specific app-store release status is not verified.",
+      "category": "Support"
+    },
+    {
+      "question": "What future features are planned?",
+      "answer": "Future plans described for Zhatura include tournaments, expanded academy management, smart-board connections, and video coaching classrooms. These are roadmap items, not current capabilities.",
+      "category": "Planned Features"
     },
     {
       "question": "How do students log into Zhatura?",
@@ -1184,7 +1599,57 @@ window.ZHATURA_SUPPORT_DATA = {
     },
     {
       "question": "What is Zhatura?",
-      "answer": "Zhatura is an AI-powered chess learning platform for students, children, parents, chess coaches, chess academies and organizations.",
+      "answer": "Zhatura is an AI-powered chess learning platform for students, children, parents, chess coaches, chess academies and organizations. It helps players improve by combining online chess, game review, guided coaching and practice.",
+      "category": "General"
+    },
+    {
+      "question": "Who is Zhatura designed for?",
+      "answer": "Zhatura is designed for beginners, developing chess players, young learners, parents, chess coaches and chess academies. Students use it to play and learn, parents to support and oversee learning, and coaches and academies to support player development.",
+      "category": "General"
+    },
+    {
+      "question": "Can Zhatura help beginners?",
+      "answer": "Yes. Zhatura is designed to help beginners and developing players improve through playing, reviewing games, guided coaching and practice, with explanations that are understandable and encouraging rather than only engine numbers.",
+      "category": "General"
+    },
+    {
+      "question": "Can children use Zhatura?",
+      "answer": "Yes. Zhatura is designed for young learners and includes safety-focused features such as private profiles, restricted communication, reporting and blocking, together with guardian controls for parents and guardians.",
+      "category": "General"
+    },
+    {
+      "question": "Can Zhatura analyze my games?",
+      "answer": "Yes. After a game, Zhatura can help players review important decisions, missed opportunities and turning points. The purpose is learning \u2014 understanding what happened and why \u2014 rather than only showing mistakes.",
+      "category": "General"
+    },
+    {
+      "question": "Does Zhatura include puzzles or training?",
+      "answer": "Yes. Documented capabilities include tactical exercises, chess practice, puzzles for training, and training connected to mistakes from previous games. Exact puzzle counts, difficulty levels and daily limits are not documented.",
+      "category": "General"
+    },
+    {
+      "question": "Can I review old games?",
+      "answer": "Yes. Zhatura allows players to revisit previous matches and their associated learning feedback. Game history can help players review earlier games, revisit coaching feedback, recognize recurring mistakes and observe improvement over time.",
+      "category": "General"
+    },
+    {
+      "question": "Does Zhatura have free access?",
+      "answer": "Zhatura documentation describes free access: free accounts may receive limited coaching reviews. Exact review limits are not verified. Current pricing and detailed subscription information should be confirmed through Zhatura Customer Support.",
+      "category": "General"
+    },
+    {
+      "question": "Does Zhatura offer paid subscriptions?",
+      "answer": "Zhatura documentation describes paid subscriptions that may provide expanded access. Plan names, exact prices and exact limits are not verified. Current pricing and detailed subscription information should be confirmed through Zhatura Customer Support.",
+      "category": "General"
+    },
+    {
+      "question": "Is Zhatura suitable for coaches?",
+      "answer": "Yes. Zhatura is designed to support chess coaching workflows and player development. Coaches manage batches in the Coach Dashboard, and students learn through online play, game review and guided practice. Detailed coach-dashboard functions beyond batch management are not documented.",
+      "category": "General"
+    },
+    {
+      "question": "Is Zhatura suitable for chess academies?",
+      "answer": "Yes. Zhatura is designed to support chess academies and organized learning environments, with coaches managing batches in the Coach Dashboard. Academy seat limits, pricing and detailed management features are not documented.",
       "category": "General"
     },
     {
@@ -1210,6 +1675,11 @@ window.ZHATURA_SUPPORT_DATA = {
     {
       "question": "Can the support agent access my account?",
       "answer": "No. The assistant cannot log into, view, check or modify any individual customer account, child profile, subscription, payment or lesson/session status in the current phase.",
+      "category": "General"
+    },
+    {
+      "question": "How much does Zhatura cost?",
+      "answer": "Exact pricing is not in the verified knowledge base. Never invent a price. Current pricing and detailed subscription information should be confirmed through Zhatura Customer Support.",
       "category": "General"
     }
   ],

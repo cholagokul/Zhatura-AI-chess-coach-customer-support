@@ -35,9 +35,13 @@ def service():
 
 
 class TestKnowledgeExpansion:
-    def test_twenty_sources_loaded(self, service):
+    def test_all_spec_sources_loaded(self, service):
         sources = {c.source.rsplit("/", 1)[-1] for c in service.store.all()}
-        assert len(sources) == 20, sources
+        assert len(sources) == 23, sources
+        # knowledge-expansion documents (2026-09-23)
+        for extra in ("21_online_chess.md", "22_game_history.md",
+                      "23_future_roadmap.md"):
+            assert extra in sources, extra
 
     def test_chunk_count_increased(self, service):
         # 20 documents produce many semantic chunks; must be well above
@@ -108,7 +112,9 @@ class TestRetrievalEvaluation:
             "How does Zhatura help children learn chess?")
         hits = service.retriever.retrieve(
             "How does Zhatura help children learn chess?", topic=topic)
-        assert hits[0].chunk.topic in ("overview", "ai_coach")
+        # the FAQ now documents this question directly, so the FAQ chunk
+        # may outrank overview/ai_coach — all three are correct sources
+        assert hits[0].chunk.topic in ("overview", "ai_coach", "faq")
 
     def test_parent_features_retrieval(self, service):
         hits = service.retriever.retrieve(
@@ -140,13 +146,15 @@ class TestRetrievalEvaluation:
         topic = intents.detect_topic("Does Zhatura analyze games?")
         hits = service.retriever.retrieve(
             "Does Zhatura analyze games?", topic=topic)
-        assert hits[0].chunk.topic == "game_analysis"
+        assert hits[0].chunk.topic in ("game_analysis", "faq")
+        assert any(h.chunk.topic == "game_analysis" for h in hits)
 
     def test_puzzles_retrieval(self, service):
         topic = intents.detect_topic("Does Zhatura give puzzles?")
         hits = service.retriever.retrieve(
             "Does Zhatura give puzzles?", topic=topic)
-        assert hits[0].chunk.topic == "puzzles"
+        assert hits[0].chunk.topic in ("puzzles", "faq")
+        assert any(h.chunk.topic == "puzzles" for h in hits)
 
     def test_progress_tracking_retrieval(self, service):
         topic = intents.detect_topic("How does progress tracking work?")

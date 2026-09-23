@@ -60,6 +60,12 @@ _SYNONYMS = {
     "analytics": ("analysis",), "review": ("analysis",),
     "coaching": ("coach", "ai"), "coaches": ("coach",),
     "student": ("children", "child"), "students": ("student",),
+    "analyze": ("analyse", "analysis"), "analyzes": ("analyse", "analysis"),
+    "analyse": ("analyze", "analysis"),
+    "puzzles": ("puzzle",), "puzzle": ("puzzles",),
+    "matchmaking": ("matchmaking", "opponent"),
+    "rating": ("rating", "ratings"), "ratings": ("rating",),
+    "tournament": ("tournament", "tournaments", "roadmap"),
 }
 
 # Exact phrases worth a bonus when present in both query and chunk.
@@ -67,6 +73,8 @@ _PHRASES = (
     "ai chess coach", "chess coach", "parent dashboard",
     "coach dashboard", "student dashboard", "chess academy",
     "game analysis", "progress", "lesson", "session",
+    "my zhatura coach", "online chess", "game history",
+    "matchmaking", "guardian controls", "game review",
 )
 
 # Native-script hints → latin retrieval tokens. Phone callers speak

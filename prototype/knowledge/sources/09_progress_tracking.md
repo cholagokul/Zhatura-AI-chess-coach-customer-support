@@ -4,13 +4,13 @@ topic: progress
 audience: general,parent,student,coach
 verified: true
 source_type: approved_internal
-last_updated: 2026-09-22
-provenance: README.md + agent prompt + audio_samples/sentences.md
+last_updated: 2026-09-23
+provenance: Verified product description (knowledge upgrade 2026-09-23)
 ---
 # Progress Tracking
 
 ## What progress tracking means
-Zhatura tracks chess-learning progress so students, parents and coaches can see how learning is going. Parents can view their child's chess learning progress in the Parent Dashboard.
+Zhatura tracks chess-learning progress so students, parents and coaches can see how learning is going. Parents can view their child's chess learning progress in the Parent Dashboard. Rated games also carry player ratings that help players track competitive progress over time, and game history helps players observe improvement over time.
 
 ## What progress includes
 Exactly which metrics are tracked — for example ratings, lessons completed, puzzles solved, time spent, mistake patterns or skill areas — is not yet documented in verified Zhatura sources.

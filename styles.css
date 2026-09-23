@@ -544,6 +544,17 @@ textarea:focus-visible {
   border-color: var(--accent-blue);
 }
 
+.category-card.active {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-light);
+  box-shadow: 0 0 0 2px var(--accent-blue);
+}
+
+.category-card.active .category-icon-wrapper {
+  background: var(--accent-blue);
+  color: #FFFFFF;
+}
+
 .category-icon-wrapper {
   width: 44px;
   height: 44px;
@@ -962,7 +973,7 @@ textarea:focus-visible {
   padding: 10px 14px;
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-primary);
   background: var(--bg-surface);
   transition: var(--transition);
@@ -975,6 +986,12 @@ textarea:focus-visible {
   border-color: var(--accent-blue);
   outline: none;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-input.input-error,
+.form-textarea.input-error {
+  border-color: var(--status-error) !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2) !important;
 }
 
 .form-textarea {
@@ -1260,5 +1277,37 @@ textarea:focus-visible {
   }
   .phone-big-link {
     font-size: 1.5rem;
+  }
+  .modal-backdrop {
+    padding: 12px;
+  }
+  .modal-dialog {
+    max-height: 92dvh;
+    max-height: 92vh;
+  }
+  .modal-header {
+    padding: 16px 20px;
+  }
+  .modal-body {
+    padding: 20px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0 16px;
+  }
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .audience-bar {
+    gap: 8px;
+  }
+  .audience-pill {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  .hero-container {
+    padding: 36px 16px 44px;
   }
 }

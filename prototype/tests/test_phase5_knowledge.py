@@ -66,7 +66,7 @@ class TestLoading:
         assert len(service.store) >= 20
         assert all(c.verified for c in service.store.all())
 
-    def test_twenty_spec_documents_present(self):
+    def test_all_spec_documents_present(self):
         chunks = load_sources(DEFAULT_SOURCES_DIR)
         names = {c.source.rsplit("/", 1)[-1] for c in chunks}
         for expected in (
@@ -80,7 +80,9 @@ class TestLoading:
                 "15_faq.md", "16_escalation_support.md",
                 "17_organization_custom_plans.md", "18_privacy_security.md",
                 "19_supported_platforms.md",
-                "20_common_customer_issues.md"):
+                "20_common_customer_issues.md",
+                "21_online_chess.md", "22_game_history.md",
+                "23_future_roadmap.md"):
             assert expected in names
 
     def test_markdown_sections_become_chunks_with_metadata(self):

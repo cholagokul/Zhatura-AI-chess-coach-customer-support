@@ -46,6 +46,24 @@ CATEGORY_MAP = {
         "icon": "activity",
         "description": "Move review, mistake identification, and AI suggestions.",
     },
+    "online_chess": {
+        "id": "online-chess",
+        "title": "Online Chess",
+        "icon": "swords",
+        "description": "One-on-one games, matchmaking, challenges, and player ratings.",
+    },
+    "game_history": {
+        "id": "game-analysis",
+        "title": "Game Analysis",
+        "icon": "activity",
+        "description": "Move review, mistake identification, and AI suggestions.",
+    },
+    "roadmap": {
+        "id": "planned-features",
+        "title": "Planned & Future Features",
+        "icon": "map",
+        "description": "Roadmap items such as tournaments — planned, not yet current.",
+    },
     "progress": {
         "id": "progress-tracking",
         "title": "Progress Tracking",
@@ -232,8 +250,53 @@ def get_support_knowledge_payload() -> Dict[str, Any]:
     top_qa = [
         {
             "question": "What is the Zhatura AI Chess Coach?",
-            "answer": "The Zhatura AI Chess Coach is Zhatura's AI coach for learning chess. It explains chess concepts, points out mistakes, and recommends better ideas during practice and game review.",
+            "answer": "The Zhatura AI Chess Coach is Zhatura's AI coach for learning chess. It explains chess concepts, points out mistakes, and recommends better ideas during practice and game review. The coaching experience is called My Zhatura Coach.",
             "category": "AI Coach",
+        },
+        {
+            "question": "What is My Zhatura Coach?",
+            "answer": "My Zhatura Coach helps players reflect on completed games with supportive explanations and reflective questions. It does not provide moves during an active competitive game.",
+            "category": "AI Coach",
+        },
+        {
+            "question": "Can I play chess against other players?",
+            "answer": "Yes. Zhatura documentation describes online one-on-one chess games through matchmaking or direct challenges, including competitive player-versus-player games.",
+            "category": "Online Chess",
+        },
+        {
+            "question": "Does Zhatura have matchmaking?",
+            "answer": "Yes. Zhatura includes skill-based matchmaking intended to help players find opponents with comparable playing strength, so games are more balanced and useful.",
+            "category": "Online Chess",
+        },
+        {
+            "question": "Does Zhatura use player ratings?",
+            "answer": "Yes. Zhatura includes player ratings for rated games to help players track competitive progress over time. The rating formula and brackets are not documented.",
+            "category": "Online Chess",
+        },
+        {
+            "question": "Does Zhatura give moves during live games?",
+            "answer": "No. Zhatura's AI coaching is designed for learning and post-game reflection, not for giving players moves during an active competitive game.",
+            "category": "AI Coach",
+        },
+        {
+            "question": "Can parents review their child's activity?",
+            "answer": "Zhatura documentation describes guardian controls that include managing consent, reviewing activity, and controlling access to protected features.",
+            "category": "Parents",
+        },
+        {
+            "question": "Does Zhatura support safety controls for young players?",
+            "answer": "Yes. Documented safety-oriented features include private profiles, restricted communication, reporting, and blocking, alongside guardian controls.",
+            "category": "Privacy & Security",
+        },
+        {
+            "question": "Can I use Zhatura on mobile?",
+            "answer": "Zhatura is designed for chess play and learning on Android and iOS. Specific app-store release status is not verified.",
+            "category": "Support",
+        },
+        {
+            "question": "What future features are planned?",
+            "answer": "Future plans described for Zhatura include tournaments, expanded academy management, smart-board connections, and video coaching classrooms. These are roadmap items, not current capabilities.",
+            "category": "Planned Features",
         },
         {
             "question": "How do students log into Zhatura?",

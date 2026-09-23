@@ -15,11 +15,12 @@
   <meta property="og:description" content="Find verified guides, FAQs, and 24/7 assistance for Zhatura AI Chess Coach learning platform.">
   <meta property="og:url" content="https://zhatura.com/support">
   <meta property="og:site_name" content="Zhatura Support">
+  <link rel="canonical" href="https://zhatura.com/support">
 
   <!-- Favicon SVG -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563EB'%3E%3Cpath d='M19 22H5v-2h14v2M19 18H5v-2h14v2M17.5 7.5a2.5 2.5 0 0 1-2.5 2.5H14v2h2a2 2 0 0 1 2 2v2H6v-2a2 2 0 0 1 2-2h2v-2H9a2.5 2.5 0 0 1-2.5-2.5V4h11v3.5z'/%3E%3C/svg%3E">
 
-    <!-- Primary Inlined Stylesheet for Instant Bulletproof Rendering -->
+      <!-- Primary Inlined Stylesheet for Instant Bulletproof Rendering -->
   <style id="zhatura-core-styles">
 /* ==========================================================================
    Zhatura AI Chess Coach — Professional Customer Support Design System
@@ -567,6 +568,17 @@ textarea:focus-visible {
   border-color: var(--accent-blue);
 }
 
+.category-card.active {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-light);
+  box-shadow: 0 0 0 2px var(--accent-blue);
+}
+
+.category-card.active .category-icon-wrapper {
+  background: var(--accent-blue);
+  color: #FFFFFF;
+}
+
 .category-icon-wrapper {
   width: 44px;
   height: 44px;
@@ -985,7 +997,7 @@ textarea:focus-visible {
   padding: 10px 14px;
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-primary);
   background: var(--bg-surface);
   transition: var(--transition);
@@ -998,6 +1010,12 @@ textarea:focus-visible {
   border-color: var(--accent-blue);
   outline: none;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-input.input-error,
+.form-textarea.input-error {
+  border-color: var(--status-error) !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2) !important;
 }
 
 .form-textarea {
@@ -1284,11 +1302,57 @@ textarea:focus-visible {
   .phone-big-link {
     font-size: 1.5rem;
   }
+  .modal-backdrop {
+    padding: 12px;
+  }
+  .modal-dialog {
+    max-height: 92dvh;
+    max-height: 92vh;
+  }
+  .modal-header {
+    padding: 16px 20px;
+  }
+  .modal-body {
+    padding: 20px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0 16px;
+  }
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .audience-bar {
+    gap: 8px;
+  }
+  .audience-pill {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  .hero-container {
+    padding: 36px 16px 44px;
+  }
 }
 
   </style>
   <link rel="stylesheet" href="styles.css">
 
+    <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Zhatura AI Chess Coach Customer Support",
+    "url": "https://zhatura.com/support",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://zhatura.com/support?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
   {
@@ -1362,7 +1426,39 @@ textarea:focus-visible {
         "name": "How can I inquire about current plans and pricing?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "For current plan or pricing information, please contact Zhatura Customer Support directly at 095-138-86363."
+          "text": "Zhatura documentation describes free access with limited coaching reviews and paid subscriptions with expanded access. For current plan or pricing information, please contact Zhatura Customer Support directly at 095-138-86363."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is My Zhatura Coach?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "My Zhatura Coach helps players reflect on completed games through supportive explanations and reflective questions. It does not provide moves during an active competitive game."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Zhatura have matchmaking and player ratings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Zhatura documentation describes skill-based matchmaking to find opponents of comparable strength, and player ratings for rated games to track competitive progress."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use Zhatura on mobile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zhatura is designed for chess play and learning on Android and iOS. Specific app-store release status is not verified."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What future features are planned for Zhatura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Future plans described for Zhatura include tournaments, expanded academy management, smart-board connections, and video coaching classrooms. These are roadmap items, not current capabilities."
         }
       }
     ]
@@ -1575,7 +1671,20 @@ textarea:focus-visible {
           </div>
         </a>
 
-        <!-- 6. Progress Tracking -->
+        <!-- 6. Online Chess -->
+        <a href="#articles-section" class="category-card" data-category="online-chess">
+          <div class="category-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93A8.01 8.01 0 014 12c0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41A7.98 7.98 0 0120 12c0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <h3 class="category-card-title">Online Chess</h3>
+          <p class="category-card-desc">One-on-one games, skill-based matchmaking, direct challenges, and player ratings.</p>
+          <div class="category-meta">
+            <span>Play &amp; Compete</span>
+            <span>View Guides &rarr;</span>
+          </div>
+        </a>
+
+        <!-- 7. Progress Tracking -->
         <a href="#articles-section" class="category-card" data-category="progress-tracking">
           <div class="category-icon-wrapper" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
@@ -1601,7 +1710,7 @@ textarea:focus-visible {
           </div>
         </a>
 
-        <!-- 8. Plans & Billing -->
+        <!-- 9. Plans & Billing -->
         <a href="#articles-section" class="category-card" data-category="plans-billing">
           <div class="category-icon-wrapper" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
@@ -1614,7 +1723,20 @@ textarea:focus-visible {
           </div>
         </a>
 
-        <!-- 9. Account & Login -->
+        <!-- 10. Planned & Future Features -->
+        <a href="#articles-section" class="category-card" data-category="planned-features">
+          <div class="category-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 6l-1-2H5v17h2v-5h5l1 2h7V6h-6zm-8 8H7v-2h-1v2zm0-4H7V8h-1v2zm10 4h-5v-2h5v2zm0-4h-5V8h5v2z"/></svg>
+          </div>
+          <h3 class="category-card-title">Planned &amp; Future Features</h3>
+          <p class="category-card-desc">Roadmap items such as tournaments, expanded academy management, smart boards, and video coaching — planned, not yet current.</p>
+          <div class="category-meta">
+            <span>Status: Future</span>
+            <span>View Roadmap &rarr;</span>
+          </div>
+        </a>
+
+        <!-- 11. Account & Login -->
         <a href="#articles-section" class="category-card" data-category="account-login">
           <div class="category-icon-wrapper" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
@@ -1659,7 +1781,7 @@ textarea:focus-visible {
     <div id="search-results-section" class="search-results-section" aria-live="polite">
       <div class="results-count-bar">
         <span id="results-count-text">Showing search results</span>
-        <button type="button" onclick="document.getElementById('search-clear-btn').click()" class="read-btn">Clear Filter</button>
+        <button type="button" id="clear-filter-btn" class="read-btn" aria-label="Clear active search and category filters">Clear Filter</button>
       </div>
     </div>
 
@@ -1824,6 +1946,46 @@ textarea:focus-visible {
             <p>Never. Zhatura AI customer care and staff never request passwords, OTPs, or payment card CVVs. Please never share security credentials with anyone.</p>
           </div>
         </div>
+
+        <div class="faq-item" id="faq-item-6">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-item-6-ans">
+            <span>What is My Zhatura Coach?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-item-6-ans">
+            <p>My Zhatura Coach helps players reflect on completed games through supportive explanations and reflective questions. It is designed for learning and post-game reflection — it does not provide moves during an active competitive game.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-item-7">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-item-7-ans">
+            <span>Can I play chess against other players, and does Zhatura have matchmaking?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-item-7-ans">
+            <p>Yes. Zhatura documentation describes online one-on-one chess games through matchmaking or direct challenges, skill-based matchmaking for comparable-strength opponents, and player ratings for rated games.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-item-8">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-item-8-ans">
+            <span>Can parents review activity and safety controls for young players?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-item-8-ans">
+            <p>Yes. Documented guardian controls include managing consent, reviewing activity, and controlling access to protected features. Documented safety features include private profiles, restricted communication, reporting, and blocking.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-item-9">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-item-9-ans">
+            <span>What future features are planned for Zhatura?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-item-9-ans">
+            <p>Future plans described for Zhatura include tournaments, expanded academy management, smart-board connections, and video coaching classrooms. Status: FUTURE — these are roadmap items, not current capabilities, and no launch dates are verified.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1960,9 +2122,12 @@ textarea:focus-visible {
           </div>
 
           <button type="submit" class="submit-btn">
-            <span>Submit Support Request</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <span>Generate Local Inquiry Reference</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </button>
+          <p class="form-disclaimer" style="font-size:0.8rem; color:#64748B; margin-top:14px; line-height:1.5;">
+            <strong>Note:</strong> Online submission backend is not connected. This form generates a local tracking reference for your personal records. For live assistance or immediate support, please call our 24/7 support line at <a href="tel:09513886363" style="color:#2563EB; font-weight:600;">095-138-86363</a>.
+          </p>
         </form>
       </div>
     </section>

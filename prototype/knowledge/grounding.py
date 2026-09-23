@@ -24,10 +24,14 @@ MIN_HITS_FOR_HIGH = 1
 PRICING_UNAVAILABLE_STATEMENT = (
     "There is no verified Zhatura plan, package, subscription, price, "
     "discount, refund, renewal or free-trial information in the current "
-    "knowledge base. Tell the caller clearly that verified plan and "
-    "pricing details are not available yet, and that you will not guess. "
-    "Offer to help with other Zhatura questions or to note the question "
-    "for the support team."
+    "knowledge base. Zhatura documentation does describe free access "
+    "with limited coaching reviews and paid subscriptions with expanded "
+    "access, but you must never invent exact prices, plan names or "
+    "limits. Tell the caller clearly that current pricing and detailed "
+    "subscription information should be confirmed through Zhatura "
+    "Customer Support, and that you will not guess. Offer to help with "
+    "other Zhatura questions or to note the question for the support "
+    "team."
 )
 
 UNKNOWN_STATEMENT = (

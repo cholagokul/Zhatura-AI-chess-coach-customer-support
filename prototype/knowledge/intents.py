@@ -18,7 +18,19 @@ _TOPIC_KEYWORDS = {
     "overview": ("zhatura", "company", "platform", "about",
                  "क्या है", "ज़तुरा", "என்ன", "ஸ்துரா"),
     "ai_coach": ("ai chess coach", "chess coach", "ai coach", "coach ai",
-                 "coaching", "कोच", "கோச்"),
+                 "my zhatura coach", "zhatura coach", "coaching",
+                 "कोच", "கோச்"),
+    "online_chess": ("online chess", "matchmaking", "match making",
+                     "direct challenge", "challenge", "opponent",
+                     "rated game", "player rating", "player ratings",
+                     "play against", "play chess", "one-on-one",
+                     "player versus player", "multiplayer"),
+    "game_history": ("game history", "old games", "previous games",
+                     "past games", "earlier games", "past matches",
+                     "previous matches"),
+    "roadmap": ("tournament", "tournaments", "roadmap", "coming soon",
+                "smart board", "smart-board", "smartboard",
+                "video coaching", "future feature", "planned feature"),
     "features": ("feature", "features", "what can", "do in zhatura",
                  "capabilities", "use zhatura", "फीचर"),
     "plans": ("plan", "plans", "package", "packages", "subscription",
@@ -34,8 +46,9 @@ _TOPIC_KEYWORDS = {
                  "report", "प्रोग्रेस", "प्रगति", "முன்னேற்றம்",
                  "புரொக்ரஸ்", "పురోగతి"),
     "puzzles": ("puzzle", "puzzles", "पज़ल", "பஸில்"),
-    "game_analysis": ("game analysis", "analysis", "analyse", "review",
-                      "game review", "विश्लेषण", "அணாலிசிஸ்"),
+    "game_analysis": ("game analysis", "analysis", "analyse", "analyze",
+                      "analyzes", "games", "game review", "review",
+                      "विश्लेषण", "அணாலிசிஸ்"),
     "account_help": ("account", "login", "log in", "sign in", "password",
                      "cannot access", "can't access", "cannot see",
                      "can't see", "not working", "अकाउंट", "लॉगिन",
@@ -67,9 +80,19 @@ _AUDIENCE_KEYWORDS = {
 _PRICING_WORDS = (
     "price", "pricing", "cost", "fee", "fees", "plan", "plans",
     "package", "subscription", "discount", "refund", "renewal", "renew",
-    "trial", "payment", "pay", "charge", "how much", "कीमत", "कितना",
+    "trial", "payment", "pay", "paid", "paying", "charge", "charged",
+    "how much", "कीमत", "कितना",
     "प्लान", "पैकेज", "सब्सक्रिप्शन", "रिफंड", "கட்டணம்", "விலை",
-    "எவ்வளவு", "ప్లాన்", "ధర", "ఎంత",
+    "எவ்வளவு", "ప్లాన్", "ధర", "ఎంత",
+)
+
+# Word-boundary match so "planned"/"planning" (roadmap language) never
+# trigger the pricing guard, while "plans", "subscriptions", "paid" etc.
+# still do. Optional plural "s" keeps "costs"/"prices"/"discounts".
+_PRICING_RE = re.compile(
+    r"(?<![a-z])(?:" + "|".join(
+        re.escape(w) for w in _PRICING_WORDS) + r")s?(?![a-z])",
+    re.IGNORECASE,
 )
 
 # Account-specific = ownership signal AND problem/access signal. A bare
@@ -131,7 +154,7 @@ def detect_audience(text: str) -> "str | None":
 
 
 def is_pricing_query(text: str) -> bool:
-    return _contains_any(text, _PRICING_WORDS)
+    return bool(_PRICING_RE.search(text))
 
 
 def is_account_specific(text: str) -> bool:
