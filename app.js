@@ -172,7 +172,7 @@
         <div style="grid-column: 1 / -1; background:#fff; padding:36px; border-radius:10px; border:1px solid #E2E8F0; text-align:center;">
           <h4 style="font-size:1.15rem; margin-bottom:8px; color:#0F172A;">No matching support articles found</h4>
           <p style="color:#64748B; margin-bottom:16px;">Try adjusting your search terms or audience filter, or call our 24/7 AI Customer Support line.</p>
-          <a href="tel:09513886363" class="phone-cta-btn" style="display:inline-flex;">Call 095-138-86363</a>
+          <a href="tel:04447615470" class="phone-cta-btn" style="display:inline-flex;">Call 044-47615470</a>
         </div>
       `;
       return;
@@ -259,7 +259,7 @@
           <p>${escapeHTML(sec.content)}</p>
           ${
             sec.is_content_required
-              ? '<div class="gap-callout">Note: For specific policies or individual account assistance regarding this topic, please contact Zhatura Customer Support directly at <strong>095-138-86363</strong>.</div>'
+              ? '<div class="gap-callout">Note: For specific policies or individual account assistance regarding this topic, please contact Zhatura Customer Support directly at <strong>044-47615470</strong>.</div>'
               : ""
           }
         </div>
@@ -534,7 +534,7 @@
     // Copy Phone Number
     if (els.copyPhoneBtn) {
       els.copyPhoneBtn.addEventListener("click", () => {
-        copyToClipboard("095-138-86363");
+        copyToClipboard("044-47615470");
       });
     }
 
@@ -600,7 +600,7 @@
         els.feedbackForm.reset();
 
         showToast(
-          `Reference generated locally: ${ticketId}. Note: Backend submission is not connected — for immediate help, please call 095-138-86363.`
+          `Reference generated locally: ${ticketId}. Note: Backend submission is not connected — for immediate help, please call 044-47615470.`
         );
 
         setTimeout(() => {

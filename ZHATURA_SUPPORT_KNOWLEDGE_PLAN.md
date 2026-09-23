@@ -3,7 +3,7 @@
 **Document ID**: `ZHAT-KNOW-PLAN-2026-09`  
 **Classification**: Enterprise Knowledge Management & Support Operations  
 **Operating Entity**: Namali Innovations Private Limited  
-**Target Platform**: `/support` & Telephony AI Customer Care (`095-138-86363`)  
+**Target Platform**: `/support` & Telephony AI Customer Care (`044-47615470`)  
 **Status**: Approved Strategic Plan  
 
 ---
@@ -12,7 +12,7 @@
 
 The Zhatura Customer Support Knowledge Architecture provides a unified, single source of truth across all customer touchpoints:
 1. **The Web Customer Support Portal (`/support`)**: Instant, accessible self-service for students, parents, coaches, and academies.
-2. **The 24/7 AI Voice Customer Care Line (`095-138-86363`)**: Real-time conversational support in 11 Indian languages.
+2. **The 24/7 AI Voice Customer Care Line (`044-47615470`)**: Real-time conversational support in 11 Indian languages.
 3. **Escalation & Support Operations**: Standardized ticketing and follow-up workflows for Namali Innovations Private Limited.
 
 This document establishes the editorial, pedagogical, technical, and compliance roadmap for systematically expanding and maintaining the knowledge repository from its initial 20 core topics into a comprehensive enterprise help ecosystem.
@@ -121,6 +121,6 @@ provenance: [Source documents or approved leadership decisions]
 1. **Search Query Analysis**:
    - Collect client-side search terms that yielded 0 results from `/support` to identify emerging content demands.
 2. **Voice Call Trend Monitoring**:
-   - Aggregate categorized call summaries from the Exotel voice service (`095-138-86363`) to detect recurring pain points.
+   - Aggregate categorized call summaries from the Exotel voice service (`044-47615470`) to detect recurring pain points.
 3. **Weekly Knowledge Refinement**:
    - Update FAQs weekly based on real incoming parent and coach inquiries.

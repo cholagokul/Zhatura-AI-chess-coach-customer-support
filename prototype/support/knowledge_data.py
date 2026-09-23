@@ -315,7 +315,7 @@ def get_support_knowledge_payload() -> Dict[str, Any]:
         },
         {
             "question": "Where can I find current pricing and subscription plan details?",
-            "answer": "For current plan or pricing information, please contact Zhatura Customer Support directly at 095-138-86363. Our team will provide up-to-date plan details and answer any questions.",
+            "answer": "For current plan or pricing information, please contact Zhatura Customer Support directly at 044-47615470. Our team will provide up-to-date plan details and answer any questions.",
             "category": "Plans & Billing",
         },
         {
@@ -359,8 +359,8 @@ def get_support_knowledge_payload() -> Dict[str, Any]:
             "date_of_incorporation": "July 23, 2025",
             "status": "Active",
             "registered_address": "6/124, Golden City, Nochiodaipatty, Koovanuthu, Dindigul, Tamil Nadu 624003, India",
-            "support_phone": "095-138-86363",
-            "support_phone_tel": "+919513886363",
+            "support_phone": "044-47615470",
+            "support_phone_tel": "+914447615470",
             "support_languages": [
                 "English", "Hindi", "Bengali", "Tamil", "Telugu",
                 "Kannada", "Malayalam", "Marathi", "Gujarati", "Punjabi", "Odia"

@@ -85,7 +85,7 @@
 ## Form Issues
 1. **Form Honesty & Transparency**:
    - *Observation*: Toast message previously claimed "Inquiry recorded! Our team will follow up", creating a false impression of a connected backend ticket database.
-   - *Fix*: Updated toast message to honestly state `"Reference generated locally: ZHAT-XXXXXX. Note: Backend submission is not connected — for immediate help, please call 095-138-86363."` Added clear explanatory disclaimer below the form and updated the button label to "Generate Local Inquiry Reference".
+   - *Fix*: Updated toast message to honestly state `"Reference generated locally: ZHAT-XXXXXX. Note: Backend submission is not connected — for immediate help, please call 044-47615470."` Added clear explanatory disclaimer below the form and updated the button label to "Generate Local Inquiry Reference".
 2. **Double-Submit Prevention & Validation**:
    - *Observation*: Rapid clicks caused duplicate ticket references. Blank fields had no explicit `aria-invalid` tags.
    - *Fix*: Added temporary submission throttle, `aria-invalid` flagging, and visual `.input-error` outlines.
@@ -126,7 +126,7 @@
 
 ## Content Accuracy Issues
 - All future roadmap features (tournaments, video classrooms, smart boards) remain clearly flagged with `Status: FUTURE`.
-- No unverified pricing or plan names claimed. Support phone `095-138-86363` prominently featured for custom inquiries.
+- No unverified pricing or plan names claimed. Support phone `044-47615470` prominently featured for custom inquiries.
 - Corporate registry details verified: `Namali Innovations Private Limited`, July 23, 2025, Active, Dindigul, Tamil Nadu 624003.
 
 ---
