@@ -6,6 +6,9 @@
 (function () {
   "use strict";
 
+  if (window.__ZHATURA_APP_INITIALIZED__) return;
+  window.__ZHATURA_APP_INITIALIZED__ = true;
+
   // Application State
   const state = {
     articles: [],
@@ -44,15 +47,14 @@
   async function init() {
     let data = window.ZHATURA_SUPPORT_DATA;
     if (!data) {
-      try {
-        const resp = await fetch("/support/data.json");
-        if (resp.ok) {
-          data = await resp.json();
-        }
-      } catch (err) {
+      const endpoints = ["data.json", "./data.json", "/support/data.json", "/support/static/data.json"];
+      for (const url of endpoints) {
         try {
-          const resp = await fetch("./data.json");
-          if (resp.ok) data = await resp.json();
+          const resp = await fetch(url);
+          if (resp.ok) {
+            data = await resp.json();
+            break;
+          }
         } catch (_) {}
       }
     }
