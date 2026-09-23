@@ -4,8 +4,8 @@ topic: support
 audience: general
 verified: true
 source_type: approved_internal
-last_updated: 2026-09-22
-provenance: project-wide review 2026-09-22
+last_updated: 2026-09-23
+provenance: Verified product description (knowledge upgrade 2026-09-23)
 ---
 # Common Customer Issues
 
@@ -22,7 +22,7 @@ If a caller says their child cannot see today's lesson or session, treat it as a
 For login issues, suggest general checks such as credentials and internet connectivity. Do not walk the caller through unverified reset steps.
 
 ## Pricing or plan questions
-Pricing and plan details are not available in verified sources. Use the pricing guard: say verified details are not available and do not invent numbers or plan names.
+Zhatura documentation describes free and paid access at a concept level, but exact pricing, plan names and limits are not available in verified sources. Use the pricing guard: never invent numbers or plan names, and direct current pricing questions to Zhatura Customer Support.
 
 ## Human support
 Requests for a human representative are acknowledged. Live transfer is not enabled yet; the support team can follow up.

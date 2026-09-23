@@ -7,6 +7,8 @@ Verifies:
 - Static assets (/support/static/styles.css, app.js) serve correctly
 - Security scan: NO telephony PINs, API keys, or internal vendor names leaked
 - Verified company information and public support phone 095-138-86363
+- Support form honesty: local reference disclosure, no fake submission claims
+- WCAG AA accessibility markers and modal focus trapping semantics
 - Telephony /health endpoint remains unaffected
 """
 
@@ -88,8 +90,9 @@ def test_support_data_json_structure(client):
     assert comp["support_phone"] == "095-138-86363"
     assert len(comp["support_languages"]) >= 11
 
-    # Verify all 20 verified articles are present
-    assert len(data["articles"]) == 20
+    # Verify all verified articles are present (20 spec + 3 knowledge
+    # expansion documents: online chess, game history, future roadmap)
+    assert len(data["articles"]) == 23
     article_ids = {a["id"] for a in data["articles"]}
     assert "zhatura_overview" in article_ids
     assert "ai_chess_coach" in article_ids
@@ -100,6 +103,16 @@ def test_support_data_json_structure(client):
     assert "lessons_sessions" in article_ids
     assert "plans_pricing" in article_ids
     assert "faq" in article_ids
+    assert "online_chess" in article_ids
+    assert "game_history" in article_ids
+    assert "future_roadmap" in article_ids
+
+    # Knowledge expansion topics are searchable for customers
+    blob = json.dumps(data).lower()
+    for term in ("matchmaking", "player ratings", "my zhatura coach",
+                 "game history", "guardian controls", "android", "ios",
+                 "tournament", "smart-board", "video coaching"):
+        assert term in blob, f"support search missing topic: {term}"
 
     # Verify FAQs count
     assert len(data["faqs"]) >= 10
@@ -167,11 +180,41 @@ def test_seo_and_accessibility_markup(client):
     assert 'role="search"' in html
     assert 'aria-labelledby' in html
     assert 'aria-expanded' in html
+    assert 'role="tablist"' in html
+    assert 'role="tab"' in html
 
     # Structured Data JSON-LD
     assert 'application/ld+json' in html
+    assert '"@type": "WebSite"' in html
     assert '"@type": "Organization"' in html
     assert '"@type": "FAQPage"' in html
+
+    # Canonical link
+    assert '<link rel="canonical" href="https://zhatura.com/support">' in html
+
+
+def test_support_form_honesty_and_disclaimer(client):
+    """Ensure the support form honestly communicates that submission is a local reference without faking ticket creation."""
+    resp = client.get("/support")
+    html = resp.text
+    assert "Online submission backend is not connected" in html
+    assert "local tracking reference" in html
+    assert "Generate Local Inquiry Reference" in html
+
+    resp_js = client.get("/support/static/app.js")
+    js = resp_js.text
+    assert "Reference generated locally" in js
+    assert "Backend submission is not connected" in js
+    # Must NOT claim that an actual ticket was recorded or our team will follow up
+    assert "Inquiry recorded! Ticket Ref:" not in js
+
+
+def test_brand_spelling_integrity(client):
+    """Verify that Zhatura is never misspelled as Zathura anywhere in public support pages."""
+    resp = client.get("/support")
+    assert "zathura" not in resp.text.lower()
+    resp_data = client.get("/support/data.json")
+    assert "zathura" not in resp_data.text.lower()
 
 
 def test_health_endpoint_remains_unaffected(client):
