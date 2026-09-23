@@ -1,7 +1,6 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "outputDirectory": "prototype/support/static",
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/support", "destination": "/index.html" },
