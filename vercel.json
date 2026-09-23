@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "outputDirectory": "prototype/support/static",
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/support", "destination": "/index.html" },
+    { "source": "/support/", "destination": "/index.html" },
+    { "source": "/support/static/(.*)", "destination": "/$1" },
+    { "source": "/support/data.json", "destination": "/data.json" }
+  ]
+}
