@@ -6,6 +6,9 @@
 (function () {
   "use strict";
 
+  if (window.__ZHATURA_APP_INITIALIZED__) return;
+  window.__ZHATURA_APP_INITIALIZED__ = true;
+
   // Application State
   const state = {
     articles: [],
