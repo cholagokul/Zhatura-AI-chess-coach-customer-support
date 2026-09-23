@@ -3,7 +3,7 @@
 **Document ID**: `ZHATURA_PRODUCT_CAPABILITY_MATRIX`
 **Classification**: Product Knowledge / Customer Support Content
 **Operating Entity**: Namali Innovations Private Limited
-**Public Support Line**: `095-138-86363`
+**Public Support Line**: `044-47615470`
 **Last Updated**: 2026-09-23
 **Status**: Active Reference
 

@@ -4,7 +4,7 @@
 **Document ID**: `ZHAT-REP-2026-09`  
 **Operating Entity**: Namali Innovations Private Limited  
 **Public Route**: `/support` & `/support/`  
-**Public Support Phone**: `095-138-86363` (`tel:09513886363`)  
+**Public Support Phone**: `044-47615470` (`tel:04447615470`)  
 **Delivery Date**: September 23, 2026  
 **Status**: Production Ready & Fully Verified  
 
@@ -23,7 +23,7 @@ The portal is directly integrated into the existing FastAPI service at `/support
 4. **20 Verified Knowledge Articles**: Structured directly from approved markdown sources in `prototype/knowledge/sources/*.md`.
 5. **Truthful Content Discipline**: Strict enforcement of `CONTENT_REQUIRED` markers for unverified pricing or internal mechanics; no invented numbers.
 6. **Corporate Transparency**: Prominently features verified corporate registry details for Namali Innovations Private Limited.
-7. **Public Support Phone**: Features `095-138-86363` with 1-click dialing, copy-to-clipboard, and callout for 11 Indian languages.
+7. **Public Support Phone**: Features `044-47615470` with 1-click dialing, copy-to-clipboard, and callout for 11 Indian languages.
 8. **Enterprise Security**: Zero exposure of API keys, telephony PINs, or internal vendor names in client-facing code.
 
 ---
@@ -38,7 +38,7 @@ In strict adherence to regulatory transparency and enterprise trust, the portal 
 | **Date of Incorporation** | **July 23, 2025** |
 | **Entity Status** | **Active** (Private Limited Company) |
 | **Registered Office Address** | **6/124, Golden City, Nochiodaipatty, Koovanuthu, Dindigul, Tamil Nadu 624003, India** |
-| **Public Customer Support Line** | **095-138-86363** (`tel:09513886363`) |
+| **Public Customer Support Line** | **044-47615470** (`tel:04447615470`) |
 | **Supported Voice Languages** | **11 Indian Languages**: English, Hindi, Bengali, Tamil, Telugu, Kannada, Malayalam, Marathi, Gujarati, Punjabi, Odia |
 
 ---
@@ -100,7 +100,7 @@ In strict adherence to regulatory transparency and enterprise trust, the portal 
 - Accessible accordion with dynamic SVG arrow animation and single-item expansion to keep reading clean and focused.
 
 ### F. Contact & Interactive Inquiry Form
-- Direct phone call highlight box with 1-click dialing (`095-138-86363`) and copy-to-clipboard button.
+- Direct phone call highlight box with 1-click dialing (`044-47615470`) and copy-to-clipboard button.
 - Clean customer feedback form with client-side validation for name, contact details, role, topic category, and message.
 - Generates simulated tracking reference IDs (`ZHAT-XXXXXX`) with an instant toast notification.
 

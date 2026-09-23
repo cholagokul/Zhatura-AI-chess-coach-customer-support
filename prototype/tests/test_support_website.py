@@ -6,7 +6,7 @@ Verifies:
 - Knowledge data payload (/support/data.json) with all 20 verified articles
 - Static assets (/support/static/styles.css, app.js) serve correctly
 - Security scan: NO telephony PINs, API keys, or internal vendor names leaked
-- Verified company information and public support phone 095-138-86363
+- Verified company information and public support phone 044-47615470
 - Support form honesty: local reference disclosure, no fake submission claims
 - WCAG AA accessibility markers and modal focus trapping semantics
 - Telephony /health endpoint remains unaffected
@@ -52,7 +52,7 @@ def test_support_page_returns_200_html(client):
     assert "text/html" in resp.headers["content-type"]
     text = resp.text
     assert "<title>Zhatura AI Chess Coach — Customer Support & Help Center</title>" in text
-    assert "095-138-86363" in text
+    assert "044-47615470" in text
     assert "Namali Innovations Private Limited" in text
     assert "July 23, 2025" in text
     assert "Dindigul" in text
@@ -87,7 +87,7 @@ def test_support_data_json_structure(client):
     assert comp["date_of_incorporation"] == "July 23, 2025"
     assert comp["status"] == "Active"
     assert "Dindigul" in comp["registered_address"]
-    assert comp["support_phone"] == "095-138-86363"
+    assert comp["support_phone"] == "044-47615470"
     assert len(comp["support_languages"]) >= 11
 
     # Verify all verified articles are present (20 spec + 3 knowledge
@@ -129,7 +129,7 @@ def test_static_assets_serving(client):
     resp_js = client.get("/support/static/app.js")
     assert resp_js.status_code == 200
     assert "javascript" in resp_js.headers["content-type"]
-    assert "095-138-86363" in resp_js.text
+    assert "044-47615470" in resp_js.text
 
 
 def test_security_audit_zero_secrets_and_no_vendor_leakage(client):
