@@ -1,0 +1,8 @@
+sarvamai>=0.1.34
+python-dotenv>=1.0.0
+pytest>=8.0.0
+sounddevice>=0.5.0  # local mic/speaker IO (Phase 3 voice demo)
+numpy>=1.26.0       # PCM resampling (Phase 3)
+av>=12.0.0          # per-chunk MP3 decode for streaming TTS playback (Phase 3)
+fastapi>=0.115.0       # Phase 4 Exotel WebSocket server
+uvicorn[standard]>=0.30.0  # Phase 4 ASGI server

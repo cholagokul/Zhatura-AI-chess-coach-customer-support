@@ -1,0 +1,94 @@
+{
+  "english/account_help": {
+    "transcript": "I can help you check your child's JATURA account.",
+    "detected_lang": "en-IN"
+  },
+  "english/human_transfer": {
+    "transcript": "Would you like me to connect you with the human support representative?",
+    "detected_lang": "en-IN"
+  },
+  "english/phase2_demo": {
+    "transcript": "Hello, welcome to Jhatura customer support.",
+    "detected_lang": "en-IN"
+  },
+  "english/problem": {
+    "transcript": "Please tell me what problem you are experiencing.",
+    "detected_lang": "en-IN"
+  },
+  "english/subscription": {
+    "transcript": "Your subscription status has been checked.",
+    "detected_lang": "en-IN"
+  },
+  "english/welcome": {
+    "transcript": "Hello, welcome to Jathura customer support. How can I help you today?",
+    "detected_lang": "en-IN"
+  },
+  "tamil/account_help": {
+    "transcript": "உங்கள் குழந்தையின் ஜத்துரா அக்கவுண்ட்டை செக் செய்ய நான் உதவ முடியும்.",
+    "detected_lang": "ta-IN"
+  },
+  "tamil/problem": {
+    "transcript": "நீங்கள் என்ன ப்ராப்ளம் அனுபவிக்கிறீர்கள் என்று சொல்லுங்கள்.",
+    "detected_lang": "ta-IN"
+  },
+  "tamil/welcome": {
+    "transcript": "வணக்கம். ஜதுரா கஸ்டமர் சப்போர்ட்டுக்கு வரவேற்கிறோம். இன்று உங்களுக்கு எப்படி உதவ முடியும்?",
+    "detected_lang": "ta-IN"
+  },
+  "hindi/account_help": {
+    "transcript": "मैं आपके बच्चे के झतोरा अकाउंट की जांच करने में मदद कर सकती हूँ।",
+    "detected_lang": "hi-IN"
+  },
+  "hindi/problem": {
+    "transcript": "कृपया बताइए आपको क्या समस्या आ रही है।",
+    "detected_lang": "hi-IN"
+  },
+  "hindi/welcome": {
+    "transcript": "नमस्ते। जतुरा कस्टमर सपोर्ट में आपका स्वागत है। आज मैं आपकी कैसे मदद कर सकती हूँ?",
+    "detected_lang": "hi-IN"
+  },
+  "hinglish/account_help": {
+    "transcript": "मैं आपके बच्चे का जतुरा काउंट चेक करने में हेल्प कर सकती हूँ।",
+    "detected_lang": "hi-IN"
+  },
+  "hinglish/welcome": {
+    "transcript": "नमस्ते, जतुरा कस्टमर सपोर्ट में आपका स्वागत है। मैं आपकी कैसे हेल्प कर सकती हूँ?",
+    "detected_lang": "hi-IN"
+  },
+  "tanglish/account_help": {
+    "transcript": "உங்கள் குழந்தையோட ஜதுரா அக்கவுண்ட்டை செக் பண்ண நான் ஹெல்ப் பண்ண முடியும்.",
+    "detected_lang": "ta-IN"
+  },
+  "tanglish/welcome": {
+    "transcript": "வணக்கம், ஜாத்துரா கஸ்டமர் சப்போர்ட்க்கு வரவிருக்கிறோம். உனக்கும் என்ன ஹெல்ப் வேணும்?",
+    "detected_lang": "ta-IN"
+  },
+  "terminology/brand_chess_academy": {
+    "plain": "Welcome to the Jhatura Chess Academy.",
+    "keyterms": "Welcome to the Zhatura Chess Academy."
+  },
+  "terminology/brand_chess_coach": {
+    "plain": "Your child uses the Jatuara AI chess coach.",
+    "keyterms": "Your child uses the Zhatura AI chess coach."
+  },
+  "terminology/brand_coach_dashboard": {
+    "plain": "Coaches manage batches in the coach dashboard.",
+    "keyterms": "Coaches manage batches in the Coach Dashboard."
+  },
+  "terminology/brand_parent_dashboard": {
+    "plain": "You can view progress in the parent dashboard.",
+    "keyterms": "You can view progress in the Parent Dashboard."
+  },
+  "terminology/brand_student_dashboard": {
+    "plain": "Students log in through the student dashboard.",
+    "keyterms": "Students log in through the student dashboard."
+  },
+  "terminology/brand_zhatura": {
+    "plain": "Jhatura.",
+    "keyterms": "Zhatura."
+  },
+  "terminology/brand_zhatura_ai": {
+    "plain": "Jatura AI is a learning platform.",
+    "keyterms": "Zhatura AI is a learning platform."
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "accounts": [
+    {
+      "account_id": "ACC-P100",
+      "role": "parent",
+      "name": "Priya Sharma",
+      "phone": "+91-98765-00001",
+      "email": "priya.sharma@example.com",
+      "status": "active",
+      "created_at": "2026-01-15T10:00:00Z",
+      "children": ["STU-C001"],
+      "assigned_students": [],
+      "org_id": null
+    },
+    {
+      "account_id": "ACC-P200",
+      "role": "parent",
+      "name": "Ramesh Kumar",
+      "phone": "+91-98765-00002",
+      "email": "ramesh.kumar@example.com",
+      "status": "active",
+      "created_at": "2026-02-10T14:30:00Z",
+      "children": ["STU-C002"],
+      "assigned_students": [],
+      "org_id": null
+    },
+    {
+      "account_id": "ACC-S001",
+      "role": "student",
+      "name": "Aarav Sharma",
+      "phone": "+91-98765-00003",
+      "email": "aarav.student@example.com",
+      "status": "active",
+      "created_at": "2026-01-15T10:05:00Z",
+      "student_id": "STU-C001",
+      "parent_account_id": "ACC-P100",
+      "coach_id": "COA-T001",
+      "children": [],
+      "assigned_students": [],
+      "org_id": null
+    },
+    {
+      "account_id": "ACC-S002",
+      "role": "student",
+      "name": "Ananya Kumar",
+      "phone": "+91-98765-00004",
+      "email": "ananya.student@example.com",
+      "status": "active",
+      "created_at": "2026-02-10T14:35:00Z",
+      "student_id": "STU-C002",
+      "parent_account_id": "ACC-P200",
+      "coach_id": "COA-T002",
+      "children": [],
+      "assigned_students": [],
+      "org_id": null
+    },
+    {
+      "account_id": "ACC-T001",
+      "role": "coach",
+      "coach_id": "COA-T001",
+      "name": "Coach Anand",
+      "phone": "+91-98765-00005",
+      "email": "coach.anand@example.com",
+      "status": "active",
+      "created_at": "2025-11-01T09:00:00Z",
+      "children": [],
+      "assigned_students": ["STU-C001"],
+      "org_id": "ORG-001"
+    },
+    {
+      "account_id": "ACC-T002",
+      "role": "coach",
+      "coach_id": "COA-T002",
+      "name": "Coach Divya",
+      "phone": "+91-98765-00006",
+      "email": "coach.divya@example.com",
+      "status": "active",
+      "created_at": "2025-11-15T11:00:00Z",
+      "children": [],
+      "assigned_students": ["STU-C002"],
+      "org_id": "ORG-002"
+    },
+    {
+      "account_id": "ACC-A001",
+      "role": "academy_admin",
+      "admin_id": "ADM-A001",
+      "name": "Suresh Patel",
+      "phone": "+91-98765-00007",
+      "email": "suresh@knightchess.example.com",
+      "status": "active",
+      "created_at": "2025-10-01T08:00:00Z",
+      "children": [],
+      "assigned_students": [],
+      "org_id": "ORG-001",
+      "org_name": "Knight Chess Academy"
+    }
+  ],
+  "students": [
+    {
+      "student_id": "STU-C001",
+      "account_id": "ACC-S001",
+      "name": "Aarav Sharma",
+      "parent_account_id": "ACC-P100",
+      "coach_id": "COA-T001",
+      "level": "Intermediate",
+      "rating": 1250,
+      "status": "active"
+    },
+    {
+      "student_id": "STU-C002",
+      "account_id": "ACC-S002",
+      "name": "Ananya Kumar",
+      "parent_account_id": "ACC-P200",
+      "coach_id": "COA-T002",
+      "level": "Beginner",
+      "rating": 850,
+      "status": "active"
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "SES-1001",
+      "student_id": "STU-C001",
+      "title": "Tactical Patterns: Fork & Pin",
+      "start_time": "2026-09-22T16:00:00+05:30",
+      "status": "unavailable",
+      "reason_if_unavailable": "Session server undergoing scheduled maintenance",
+      "coach_id": "COA-T001"
+    },
+    {
+      "session_id": "SES-1002",
+      "student_id": "STU-C002",
+      "title": "Opening Principles: Italian Game",
+      "start_time": "2026-09-22T17:00:00+05:30",
+      "status": "scheduled",
+      "reason_if_unavailable": null,
+      "coach_id": "COA-T002"
+    }
+  ],
+  "subscriptions": [
+    {
+      "account_id": "ACC-P100",
+      "plan_id": "plan_student_pro",
+      "plan_name": "Student Pro",
+      "status": "active",
+      "billing_cycle": "monthly",
+      "renewal_date": "2026-10-15T00:00:00Z"
+    },
+    {
+      "account_id": "ACC-P200",
+      "plan_id": "plan_standard",
+      "plan_name": "Standard Plan",
+      "status": "expired",
+      "billing_cycle": "yearly",
+      "renewal_date": "2026-08-01T00:00:00Z"
+    }
+  ]
+}
